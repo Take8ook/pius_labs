@@ -29,19 +29,10 @@ $validUsers = [
     new User(13, 'Bober3', 'cow3@gmail.com', '$Tr0nG__pA$sw0Rd'),
 ];
 
-
-$user = new User(10, 'Cow10', 'cow@gmail.com', '$Tr0nG__pA$sw0Rd');
-
-// $comment = new Comment($user, 'I have no idea, what text I will post tomorrow. Good night <3');
-
-$date = new DateTime();
-echo $date->format('d M Y H:i:s');
-echo "<br>";
-
 $comments = [
-    new Comment($validUsers[0], 'First comment'),
-    new Comment($validUsers[1], 'Second comment'),
-    new Comment($validUsers[2], 'Third comment'),
+    new Comment($validUsers[0], '1st comment'),
+    new Comment($validUsers[1], '2nd comment'),
+    new Comment($validUsers[2], '3rd comment'),
     new Comment($validUsers[0], '4th comment'),
     new Comment($validUsers[1], '5th comment'),
     new Comment($validUsers[2], '6th comment'),
